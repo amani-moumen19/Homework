@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Web Dev:Lab1 - Styled Page</title>
+    <style>
+        /* Styles المطلوبة */
+        
+        .style1 {
+            color: rgb(255, 0, 0);
+        }
+        
+        .style2 {
+            color: rgb(0, 90, 128);
+            font-size: 16px;
+            font-weight: bold;
+            font-family: 'Cambria', serif;
+        }
+        
+        .style3 {
+            font-size: 14px;
+        }
+        /*ستايل اخر لتلوين الFull name...*/
+        .style4{
+            color: rgb(128, 0, 117);
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 'Cambria', serif;
+        }
+        /* تنسيق الصورة على اليمين */
+        
+        .container {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin: 20px 0;
+        }
+        
+        .text-content {
+            flex: 1;
+        }
+        
+        .image-container {
+            width: 250px;
+            height: 250px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="text-align: center;">
+        <h1 class="style1">Welcome to My Web Site</h1>
+        <h2 class="style2">Web Development (Lab1)</h2>
+    </div>
+
+    <hr>
+
+    <!-- هنا الصورة على اليمين -->
+    <div class="container">
+        <!-- النص في الجهة اليسرى -->
+        <div class="text-content">
+            <p><span class="style3"><span class="style4">Full name:</span> <span class="style2">Amani Moumen Messaoud</span></p>
+            <p><span class="style3"><span class="style4">Class:</span> <span class="style2">2<sup>nd</sup> year LMD Computer Science</span></p>
+            <p><span class="style3"><span class="style4">University:</span> <span class="style2">University of EL OUED</span></p>
+        </div>
+
+        <!-- الصورة في الجهة اليمنى -->
+        <div class="image-container">
+          <img src="https://images.wallpapersden.com/image/download/mikasa-ackerman-anime_a2xrbmiUmZqaraWkpJRnbGZurWZqZ24.jpg" alt="myphoto">
+        </div>
+    </div>
+
+    <hr>
+
+</body>
+
+</html>
